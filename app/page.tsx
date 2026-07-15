@@ -1,14 +1,14 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
   CheckCircle2,
-  Clock3,
-  House,
-  MapPin,
   MessageCircle,
   Phone,
-  ShieldCheck,
 } from "lucide-react";
+import elderlyMobilityImage from "@/app/assets/elderly-mobility-support.webp";
+import guidedExerciseImage from "@/app/assets/guided-home-exercise.webp";
+import heroImage from "@/app/assets/home-physiotherapy-hero.webp";
 import { BookingForm } from "@/components/booking-form";
 import { StructuredData } from "@/components/structured-data";
 import { blogPosts } from "@/src/content/blog";
@@ -79,52 +79,25 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-          <div className="soft-panel relative overflow-hidden px-6 py-6 md:px-8 md:py-8">
-            <div className="rounded-[2rem] border border-white/70 bg-white/80 p-4 backdrop-blur">
-              <div className="mb-4 grid gap-4 sm:grid-cols-2">
-                <div className="rounded-[1.75rem] bg-[linear-gradient(135deg,#d7f4f7,#fefefe)] p-5">
-                  <House className="h-8 w-8 text-[var(--color-teal)]" />
-                  <h2 className="mt-10 font-[family-name:var(--font-heading)] text-2xl text-[var(--color-navy)]">
-                    Home-first care
-                  </h2>
-                  <p className="mt-2 text-sm leading-7 text-[var(--color-muted)]">
-                    An original visual treatment for a reassuring home service,
-                    not a clinic or hospital setup.
-                  </p>
-                </div>
-                <div className="rounded-[1.75rem] bg-[linear-gradient(180deg,#123247,#18516a)] p-5 text-white">
-                  <ShieldCheck className="h-8 w-8 text-cyan-100" />
-                  <h2 className="mt-10 font-[family-name:var(--font-heading)] text-2xl">
-                    Practical recovery
-                  </h2>
-                  <p className="mt-2 text-sm leading-7 text-cyan-50/80">
-                    Assessment, exercise progression, mobility support, and
-                    caregiver education where relevant.
-                  </p>
-                </div>
-              </div>
-              <div className="grid gap-3 rounded-[1.75rem] bg-[var(--color-aqua)] p-5 sm:grid-cols-2">
-                <div className="rounded-2xl bg-white p-4">
-                  <Clock3 className="h-6 w-6 text-[var(--color-teal)]" />
-                  <p className="mt-5 text-sm font-semibold text-[var(--color-navy)]">
-                    Monday-Saturday
-                  </p>
-                  <p className="text-sm text-[var(--color-muted)]">
-                    8:00 AM to 8:00 PM
-                  </p>
-                </div>
-                <div className="rounded-2xl bg-white p-4">
-                  <MapPin className="h-6 w-6 text-[var(--color-teal)]" />
-                  <p className="mt-5 text-sm font-semibold text-[var(--color-navy)]">
-                    Primary coverage
-                  </p>
-                  <p className="text-sm text-[var(--color-muted)]">
-                    Gaur City 2, Greater Noida
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <figure className="relative min-h-[440px] overflow-hidden rounded-[2.25rem] shadow-[0_28px_70px_rgba(18,50,71,0.18)] md:min-h-[560px]">
+            <Image
+              src={heroImage}
+              alt="A physiotherapist guiding a patient through a shoulder mobility exercise at home"
+              fill
+              priority
+              sizes="(min-width: 1024px) 44vw, 100vw"
+              className="object-cover object-[62%_center]"
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(18,50,71,0.82)_100%)]" />
+            <figcaption className="absolute inset-x-5 bottom-5 rounded-[1.5rem] border border-white/25 bg-white/92 p-5 shadow-xl backdrop-blur-md md:inset-x-7 md:bottom-7">
+              <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[var(--color-teal)]">
+                Care that comes to you
+              </p>
+              <p className="mt-2 text-lg font-semibold text-[var(--color-navy)]">
+                One-to-one physiotherapy in the comfort of your home.
+              </p>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -149,7 +122,7 @@ export default function HomePage() {
       </section>
 
       <section className="section-pad">
-        <div className="container-shell grid gap-8 lg:grid-cols-[1fr_0.95fr]">
+        <div className="container-shell grid items-center gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <span className="eyebrow">Introduction</span>
             <h2 className="heading-display mt-5 text-4xl font-semibold text-[var(--color-navy)] md:text-5xl">
@@ -169,7 +142,19 @@ export default function HomePage() {
               </p>
             </div>
           </div>
-          <div className="surface-card grid gap-4 p-6 md:grid-cols-2">
+          <figure className="surface-card relative min-h-[360px] overflow-hidden md:min-h-[440px]">
+            <Image
+              src={guidedExerciseImage}
+              alt="A physiotherapist coaching a patient through a resistance-band exercise at home"
+              fill
+              sizes="(min-width: 1024px) 52vw, 100vw"
+              className="object-cover object-center"
+            />
+            <figcaption className="absolute bottom-5 left-5 rounded-full bg-[var(--color-navy)]/90 px-4 py-2 text-sm font-semibold text-white backdrop-blur">
+              Guided exercise, adapted to your space
+            </figcaption>
+          </figure>
+          <div className="surface-card grid gap-4 p-6 md:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
             {[
               "Individual assessment",
               "Personalised exercise programme",
@@ -297,6 +282,43 @@ export default function HomePage() {
               {item}
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="section-pad">
+        <div className="container-shell">
+          <div className="relative min-h-[540px] overflow-hidden rounded-[2.5rem] shadow-[0_30px_80px_rgba(18,50,71,0.2)]">
+            <Image
+              src={elderlyMobilityImage}
+              alt="A physiotherapist supporting an older adult with safe walking practice at home"
+              fill
+              sizes="(min-width: 1200px) 1184px, 100vw"
+              className="object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(18,50,71,0.92)_0%,rgba(18,50,71,0.68)_38%,transparent_72%)]" />
+            <div className="absolute inset-y-0 left-0 flex max-w-xl items-center p-7 md:p-12">
+              <div className="text-white">
+                <span className="inline-flex rounded-full border border-white/30 bg-white/15 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] backdrop-blur">
+                  Mobility with confidence
+                </span>
+                <h2 className="heading-display mt-5 text-4xl font-semibold md:text-5xl">
+                  Practical support for safer movement at home
+                </h2>
+                <p className="mt-5 max-w-md text-base leading-8 text-white/85 md:text-lg">
+                  Exercises can be shaped around familiar rooms, everyday
+                  movements, and the patient&apos;s current ability after an
+                  individual assessment.
+                </p>
+                <Link
+                  href="/home-physiotherapy/"
+                  className="mt-7 inline-flex min-h-12 items-center gap-2 rounded-full bg-white px-6 font-semibold text-[var(--color-navy)]"
+                >
+                  Explore elderly care support
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
