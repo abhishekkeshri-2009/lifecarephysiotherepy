@@ -24,15 +24,16 @@ export const business = {
   whatsappNumber:
     process.env.NEXT_PUBLIC_WHATSAPP_E164 || PRIMARY_PHONE_E164,
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || PLACEHOLDER_EMAIL,
-  addressLine: "Complete postal address required before launch",
+  addressLine: "P-146, 14th Avenue, near Mahagun Mywoods",
   locality: "Gaur City 2",
   city: "Greater Noida",
   state: "Uttar Pradesh",
-  postalCode: "Postal code required",
+  postalCode: "201318",
   country: "India",
   latitude: "Latitude required",
   longitude: "Longitude required",
-  googleMapsUrl: "",
+  googleMapsUrl:
+    "https://www.google.com/maps/search/?api=1&query=P-146%2C%2014th%20Avenue%2C%20Gaur%20City%202%2C%20near%20Mahagun%20Mywoods%2C%20Greater%20Noida%2C%20Uttar%20Pradesh%20201318",
   openingHours: [
     { day: "Monday", hours: "8:00 AM - 8:00 PM" },
     { day: "Tuesday", hours: "8:00 AM - 8:00 PM" },
@@ -54,7 +55,8 @@ export const business = {
   socialLinks: {
     whatsapp: "",
     googleBusinessProfile: "",
-    justdial: "",
+    justdial:
+      "https://www.justdial.com/Greater-Noida/Life-Care-Physiotherapy-Center-Near-Mahagun-Mywoods-Gaur-City-2/011PXX11-XX11-210713225521-B7Q5_BZDET",
   },
   analytics: {
     gaId: process.env.NEXT_PUBLIC_GA_ID || "",

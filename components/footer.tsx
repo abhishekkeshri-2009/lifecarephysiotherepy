@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { business } from "@/src/config/business";
+import { business, formatFullAddress } from "@/src/config/business";
 import { buildTelephoneHref, buildWhatsAppHref } from "@/src/lib/booking";
 
 export function Footer() {
@@ -19,9 +19,7 @@ export function Footer() {
             <p>Contact person: {business.contactPerson}</p>
             <p>Monday-Saturday: 8:00 AM-8:00 PM</p>
             <p>Sunday: Closed</p>
-            <p>
-              {business.locality}, {business.city}
-            </p>
+            <p>{formatFullAddress()}</p>
           </div>
         </div>
         <div className="space-y-3">
@@ -45,6 +43,9 @@ export function Footer() {
               WhatsApp {business.phoneDisplay}
             </a>
             <a href={`mailto:${business.email}`}>{business.email}</a>
+            <a href={business.googleMapsUrl} target="_blank" rel="noreferrer">
+              Get directions
+            </a>
           </div>
         </div>
       </div>

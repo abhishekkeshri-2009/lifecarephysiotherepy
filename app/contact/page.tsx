@@ -44,14 +44,33 @@ export default function ContactPage() {
             </div>
             <div className="surface-card p-6">
               <h2 className="text-2xl font-semibold text-[var(--color-navy)]">
-                Current business data status
+                Address
               </h2>
               <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">
-                Address: {formatFullAddress()}
+                {formatFullAddress()}
               </p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <a
+                  href={business.googleMapsUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex min-h-11 items-center rounded-full bg-[var(--color-navy)] px-5 text-sm font-semibold text-white"
+                >
+                  Get directions
+                </a>
+                <a
+                  href={business.socialLinks.justdial}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex min-h-11 items-center rounded-full border border-slate-200 px-5 text-sm font-semibold text-[var(--color-navy)]"
+                >
+                  View Justdial listing
+                </a>
+              </div>
               <p className="mt-2 text-sm leading-7 text-[var(--color-muted)]">
-                Verified qualifications, maps URL, exact coverage list, and a
-                live email address are still required before launch.
+                This address was sourced from the center&apos;s Justdial listing.
+                Verified qualifications, exact coverage, and a live email
+                address are still required before launch.
               </p>
               <Link
                 href="/book-home-visit/"
