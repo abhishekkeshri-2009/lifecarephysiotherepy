@@ -13,7 +13,7 @@ describe("booking helpers", () => {
 
   it("creates a whatsapp link", () => {
     expect(buildWhatsAppHref("Hello Puneet")).toContain(
-      "https://wa.me/910000000000?text=Hello%20Puneet",
+      "https://wa.me/917417252276?text=Hello%20Puneet",
     );
   });
 

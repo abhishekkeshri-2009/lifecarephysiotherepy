@@ -16,8 +16,8 @@ export function SiteShell({
         <div className="bg-amber-100 px-4 py-3 text-sm text-amber-950">
           <div className="container-shell flex flex-wrap items-center justify-between gap-2">
             <p>
-              Launch data is still incomplete. Phone, WhatsApp, email, address,
-              maps, qualifications, and analytics placeholders must be replaced
+              Launch data is still incomplete. Email, address, maps,
+              qualifications, and analytics placeholders must be replaced
               before the site goes live.
             </p>
             <Link className="font-semibold underline" href="/contact/">

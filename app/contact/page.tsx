@@ -29,13 +29,15 @@ export default function ContactPage() {
                 Direct contact
               </h2>
               <div className="mt-4 flex flex-col gap-3 text-sm text-[var(--color-muted)]">
-                <a href={buildTelephoneHref(business.phoneE164)}>Call Puneet</a>
+                <a href={buildTelephoneHref(business.phoneE164)}>
+                  Call {business.phoneDisplay}
+                </a>
                 <a
                   href={buildWhatsAppHref(
                     `Hello ${business.contactPerson}, I would like to request a home physiotherapy visit.`,
                   )}
                 >
-                  WhatsApp booking
+                  WhatsApp {business.phoneDisplay}
                 </a>
                 <a href={`mailto:${business.email}`}>{business.email}</a>
               </div>
@@ -48,8 +50,8 @@ export default function ContactPage() {
                 Address: {formatFullAddress()}
               </p>
               <p className="mt-2 text-sm leading-7 text-[var(--color-muted)]">
-                Verified qualifications, maps URL, exact coverage list, and
-                live contact details are still required before launch.
+                Verified qualifications, maps URL, exact coverage list, and a
+                live email address are still required before launch.
               </p>
               <Link
                 href="/book-home-visit/"

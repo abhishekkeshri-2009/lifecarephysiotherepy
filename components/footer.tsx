@@ -38,9 +38,11 @@ export function Footer() {
         <div className="space-y-3">
           <h3 className="font-semibold">Contact</h3>
           <div className="flex flex-col gap-3 text-sm">
-            <a href={buildTelephoneHref(business.phoneE164)}>Call Puneet</a>
+            <a href={buildTelephoneHref(business.phoneE164)}>
+              Call {business.phoneDisplay}
+            </a>
             <a href={buildWhatsAppHref(`Hello ${business.contactPerson}, I would like to request a home physiotherapy visit.`)}>
-              WhatsApp booking
+              WhatsApp {business.phoneDisplay}
             </a>
             <a href={`mailto:${business.email}`}>{business.email}</a>
           </div>

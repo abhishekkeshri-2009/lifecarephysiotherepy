@@ -21,4 +21,4 @@ Static-export Next.js website for `https://lifecarephysiotherepy.com`.
 
 ## Launch note
 
-Placeholders remain for phone, WhatsApp, email, address, maps, credentials, and analytics IDs. Review `BUSINESS-DATA-REQUIRED.md` before launch.
+Placeholders remain for email, address, maps, credentials, and analytics IDs. Review `BUSINESS-DATA-REQUIRED.md` before launch.

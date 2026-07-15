@@ -13,15 +13,16 @@ export type Review = {
 export const PLACEHOLDER_PHONE = "+910000000000";
 export const PLACEHOLDER_WHATSAPP = "+910000000000";
 export const PLACEHOLDER_EMAIL = "hello@example.com";
+export const PRIMARY_PHONE_E164 = "+917417252276";
 
 export const business = {
   businessName: "Life Care Physiotherapy Center",
   domain: "https://lifecarephysiotherepy.com",
   contactPerson: "Puneet",
-  phoneDisplay: "Phone number required before launch",
-  phoneE164: process.env.NEXT_PUBLIC_PHONE_E164 || PLACEHOLDER_PHONE,
+  phoneDisplay: "+91 7417 252 276",
+  phoneE164: process.env.NEXT_PUBLIC_PHONE_E164 || PRIMARY_PHONE_E164,
   whatsappNumber:
-    process.env.NEXT_PUBLIC_WHATSAPP_E164 || PLACEHOLDER_WHATSAPP,
+    process.env.NEXT_PUBLIC_WHATSAPP_E164 || PRIMARY_PHONE_E164,
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || PLACEHOLDER_EMAIL,
   addressLine: "Complete postal address required before launch",
   locality: "Gaur City 2",

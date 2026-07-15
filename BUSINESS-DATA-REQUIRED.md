@@ -1,7 +1,5 @@
 # Business Data Required
 
-- Puneet phone number
-- WhatsApp number
 - Complete postal address
 - Email address
 - Verified qualifications
