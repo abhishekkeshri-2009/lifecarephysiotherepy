@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+:root {
+  --color-navy: #123247;
+  --color-teal: #0aa6b5;
+  --color-aqua: #eaf9fa;
+  --color-pale: #f3fafd;
+  --color-text: #172b36;
+  --color-muted: #60717b;
+  --color-whatsapp: #25d366;
+  --color-page: #ffffff;
+  --shadow-soft: 0 20px 50px rgba(18, 50, 71, 0.08);
+  --shadow-card: 0 14px 32px rgba(18, 50, 71, 0.08);
+  --radius-xl: 28px;
+}
+
+@theme inline {
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
+}
+
+body {
+  background: var(--color-page);
+  color: var(--color-text);
+  font-family: var(--font-body), sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--color-teal) 65%, white);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 50;
+  border-radius: 999px;
+  background: var(--color-navy);
+  color: white;
+  padding: 0.75rem 1rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.container-shell {
+  margin-inline: auto;
+  width: min(100% - 1.5rem, 74rem);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(10, 166, 181, 0.18);
+  background: rgba(234, 249, 250, 0.88);
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+  color: var(--color-navy);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.section-pad {
+  padding-block: clamp(3.5rem, 7vw, 6rem);
+}
+
+.surface-card {
+  border: 1px solid rgba(18, 50, 71, 0.09);
+  background: white;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+}
+
+.soft-panel {
+  border: 1px solid rgba(18, 50, 71, 0.08);
+  background:
+    radial-gradient(circle at top left, rgba(10, 166, 181, 0.16), transparent 36%),
+    linear-gradient(180deg, rgba(243, 250, 253, 0.96), rgba(255, 255, 255, 0.96));
+  border-radius: calc(var(--radius-xl) + 6px);
+  box-shadow: var(--shadow-soft);
+}
+
+.heading-display {
+  font-family: var(--font-heading), serif;
+  letter-spacing: -0.03em;
+}
+
+.prose-copy p {
+  margin-top: 1rem;
+  color: var(--color-muted);
+  line-height: 1.8;
+}
+
+.prose-copy h2,
+.prose-copy h3 {
+  color: var(--color-navy);
+  font-family: var(--font-heading), serif;
+  letter-spacing: -0.02em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Life Care Physiotherapy Center</title>
+  <desc id="desc">Home physiotherapy in Gaur City 2, Greater Noida.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f3fafd"/>
+      <stop offset="100%" stop-color="#d5f4f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="70" y="70" width="1060" height="490" rx="48" fill="#ffffff" opacity="0.9"/>
+  <text x="120" y="220" fill="#123247" font-family="Georgia, serif" font-size="74" font-weight="700">Life Care</text>
+  <text x="120" y="290" fill="#123247" font-family="Arial, sans-serif" font-size="44">Physiotherapy Center</text>
+  <text x="120" y="380" fill="#172b36" font-family="Arial, sans-serif" font-size="34">Home physiotherapy in Gaur City 2 and Greater Noida</text>
+</svg>
