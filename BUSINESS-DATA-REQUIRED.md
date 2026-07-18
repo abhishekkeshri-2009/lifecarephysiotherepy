@@ -1,6 +1,5 @@
 # Business Data Required
 
-- Email address
 - Verified qualifications
 - Professional registrations
 - Exact service coverage list

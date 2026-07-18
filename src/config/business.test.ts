@@ -1,5 +1,9 @@
 import { expect, it } from "vitest";
-import { business, formatFullAddress } from "@/src/config/business";
+import {
+  business,
+  formatFullAddress,
+  hasPlaceholderContact,
+} from "@/src/config/business";
 
 it("shows all seven days open, including Sunday", () => {
   expect(business.sundayClosed).toBe(false);
@@ -14,6 +18,11 @@ it("uses the verified mobile number for calls and WhatsApp", () => {
   expect(business.phoneE164).toBe("+917417252276");
   expect(business.whatsappNumber).toBe("+917417252276");
   expect(business.phoneDisplay).toBe("+91 7417 252 276");
+});
+
+it("uses the verified contact email", () => {
+  expect(business.email).toBe("puneetthakur250@gmail.com");
+  expect(hasPlaceholderContact).toBe(false);
 });
 
 it("uses the Justdial address in the complete business address", () => {

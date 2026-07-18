@@ -1,6 +1,6 @@
 # SEO Checklist
 
-- Confirm final phone, email, address, maps URL, and business profile URL
+- Confirm final business profile URL
 - Validate titles and descriptions after content review
 - Submit `https://lifecarephysiotherepy.com/sitemap.xml`
 - Add Google Search Console verification token

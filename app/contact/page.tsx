@@ -69,8 +69,8 @@ export default function ContactPage() {
               </div>
               <p className="mt-2 text-sm leading-7 text-[var(--color-muted)]">
                 This address was sourced from the center&apos;s Justdial listing.
-                Verified qualifications, exact coverage, and a live email
-                address are still required before launch.
+                Verified qualifications and exact coverage are still required
+                before launch.
               </p>
               <Link
                 href="/book-home-visit/"
