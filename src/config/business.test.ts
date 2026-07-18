@@ -1,9 +1,13 @@
 import { expect, it } from "vitest";
 import { business, formatFullAddress } from "@/src/config/business";
 
-it("shows sunday closed and six opening days", () => {
-  expect(business.sundayClosed).toBe(true);
-  expect(business.openingHours).toHaveLength(6);
+it("shows all seven days open, including Sunday", () => {
+  expect(business.sundayClosed).toBe(false);
+  expect(business.openingHours).toHaveLength(7);
+  expect(business.openingHours.at(-1)).toEqual({
+    day: "Sunday",
+    hours: "8:00 AM - 8:00 PM",
+  });
 });
 
 it("uses the verified mobile number for calls and WhatsApp", () => {

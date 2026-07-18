@@ -66,7 +66,7 @@ export default function HomePage() {
               {[
                 "Home visits available",
                 "Personalised treatment plans",
-                "Monday-Saturday, 8 AM-8 PM",
+                "Monday-Sunday, 8 AM-8 PM",
                 "Gaur City 2 and nearby areas",
               ].map((item) => (
                 <div
@@ -105,9 +105,9 @@ export default function HomePage() {
         <div className="container-shell grid gap-3 md:grid-cols-6">
           {[
             "Home Physiotherapy Only",
-            "Monday-Saturday",
+            "Monday-Sunday",
             "8 AM-8 PM",
-            "Sunday Closed",
+            "Sunday Open",
             "Call and WhatsApp booking",
             "Gaur City 2, Greater Noida",
           ].map((item) => (

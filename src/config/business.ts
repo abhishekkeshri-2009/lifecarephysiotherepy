@@ -41,8 +41,9 @@ export const business = {
     { day: "Thursday", hours: "8:00 AM - 8:00 PM" },
     { day: "Friday", hours: "8:00 AM - 8:00 PM" },
     { day: "Saturday", hours: "8:00 AM - 8:00 PM" },
+    { day: "Sunday", hours: "8:00 AM - 8:00 PM" },
   ] satisfies OpeningHour[],
-  sundayClosed: true,
+  sundayClosed: false,
   serviceAreas: [
     "Gaur City 2",
     "Gaur City 1",

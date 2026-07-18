@@ -12,11 +12,11 @@ export const faqs = [
   {
     question: "What are your working hours?",
     answer:
-      "Home physiotherapy appointments are handled Monday to Saturday, 8:00 AM to 8:00 PM.",
+      "Home physiotherapy appointments are handled Monday to Sunday, 8:00 AM to 8:00 PM.",
   },
   {
     question: "Are services available on Sunday?",
-    answer: "Sunday is closed unless future business rules are updated.",
+    answer: "Yes. Sunday appointments are available from 8:00 AM to 8:00 PM.",
   },
   {
     question: "How can I book a home visit?",

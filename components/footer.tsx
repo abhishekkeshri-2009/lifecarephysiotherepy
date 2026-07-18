@@ -17,8 +17,7 @@ export function Footer() {
           </p>
           <div className="space-y-1 text-sm text-cyan-50/85">
             <p>Contact person: {business.contactPerson}</p>
-            <p>Monday-Saturday: 8:00 AM-8:00 PM</p>
-            <p>Sunday: Closed</p>
+            <p>Monday-Sunday: 8:00 AM-8:00 PM</p>
             <p>{formatFullAddress()}</p>
           </div>
         </div>
