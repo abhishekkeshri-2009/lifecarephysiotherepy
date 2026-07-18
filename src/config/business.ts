@@ -18,7 +18,7 @@ export const PRIMARY_PHONE_E164 = "+917417252276";
 export const business = {
   businessName: "Life Care Physiotherapy Center",
   domain: "https://lifecarephysiotherepy.com",
-  contactPerson: "Puneet",
+  contactPerson: "Dr. Puneet Tomar",
   phoneDisplay: "+91 7417 252 276",
   phoneE164: process.env.NEXT_PUBLIC_PHONE_E164 || PRIMARY_PHONE_E164,
   whatsappNumber:

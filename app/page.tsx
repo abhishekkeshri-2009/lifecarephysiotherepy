@@ -51,7 +51,7 @@ export default function HomePage() {
                 href={buildTelephoneHref(business.phoneE164)}
                 className="inline-flex min-h-12 items-center rounded-full border border-slate-200 px-6 font-semibold text-[var(--color-navy)]"
               >
-                Call Puneet
+                Call Dr. Puneet Tomar
               </a>
               <a
                 href={buildWhatsAppHref(
@@ -359,13 +359,13 @@ export default function HomePage() {
       <section className="section-pad bg-[var(--color-pale)]">
         <div className="container-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="surface-card p-8">
-            <span className="eyebrow">Meet Puneet</span>
+            <span className="eyebrow">Meet Dr. Puneet Tomar</span>
             <h2 className="heading-display mt-4 text-4xl font-semibold text-[var(--color-navy)]">
               A restrained, accurate profile until verified data is supplied
             </h2>
             <p className="mt-5 text-lg leading-8 text-[var(--color-muted)]">
-              Puneet coordinates home physiotherapy appointments and patient
-              enquiries for Life Care Physiotherapy Center.
+              Dr. Puneet Tomar coordinates home physiotherapy appointments and
+              patient enquiries for Life Care Physiotherapy Center.
             </p>
             <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">
               Verified degrees, registrations, certifications, hospital
@@ -514,7 +514,7 @@ export default function HomePage() {
               className="inline-flex min-h-12 items-center gap-2 rounded-full bg-[var(--color-navy)] px-6 font-semibold text-white"
             >
               <Phone className="h-4 w-4" />
-              Call Puneet
+              Call Dr. Puneet Tomar
             </a>
             <a
               href={buildWhatsAppHref(

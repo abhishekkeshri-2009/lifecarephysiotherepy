@@ -12,8 +12,8 @@ describe("booking helpers", () => {
   });
 
   it("creates a whatsapp link", () => {
-    expect(buildWhatsAppHref("Hello Puneet")).toContain(
-      "https://wa.me/917417252276?text=Hello%20Puneet",
+    expect(buildWhatsAppHref("Hello Dr. Puneet Tomar")).toContain(
+      "https://wa.me/917417252276?text=Hello%20Dr.%20Puneet%20Tomar",
     );
   });
 

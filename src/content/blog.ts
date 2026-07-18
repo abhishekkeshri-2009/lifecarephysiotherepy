@@ -19,7 +19,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-07-15",
     updatedAt: "2026-07-15",
     author: "Life Care Physiotherapy Center",
-    reviewer: "Puneet",
+    reviewer: "Dr. Puneet Tomar",
     readingTime: "5 min read",
     relatedServiceSlugs: ["orthopaedic-physiotherapy", "stroke-rehabilitation"],
     sections: [
@@ -46,7 +46,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-07-15",
     updatedAt: "2026-07-15",
     author: "Life Care Physiotherapy Center",
-    reviewer: "Puneet",
+    reviewer: "Dr. Puneet Tomar",
     readingTime: "4 min read",
     relatedServiceSlugs: ["neck-pain-physiotherapy", "cervical-spondylosis-physiotherapy"],
     sections: [
@@ -66,7 +66,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-07-15",
     updatedAt: "2026-07-15",
     author: "Life Care Physiotherapy Center",
-    reviewer: "Puneet",
+    reviewer: "Dr. Puneet Tomar",
     readingTime: "5 min read",
     relatedServiceSlugs: ["knee-pain-physiotherapy", "arthritis-rehabilitation"],
     sections: [
@@ -86,7 +86,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-07-15",
     updatedAt: "2026-07-15",
     author: "Life Care Physiotherapy Center",
-    reviewer: "Puneet",
+    reviewer: "Dr. Puneet Tomar",
     readingTime: "6 min read",
     relatedServiceSlugs: ["sciatica-physiotherapy", "slipped-disc-pivd-physiotherapy"],
     sections: [
@@ -106,7 +106,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-07-15",
     updatedAt: "2026-07-15",
     author: "Life Care Physiotherapy Center",
-    reviewer: "Puneet",
+    reviewer: "Dr. Puneet Tomar",
     readingTime: "5 min read",
     relatedServiceSlugs: ["stroke-rehabilitation", "neurophysiotherapy"],
     sections: [
@@ -126,7 +126,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-07-15",
     updatedAt: "2026-07-15",
     author: "Life Care Physiotherapy Center",
-    reviewer: "Puneet",
+    reviewer: "Dr. Puneet Tomar",
     readingTime: "5 min read",
     relatedServiceSlugs: ["sports-injury-rehabilitation", "acl-rehabilitation"],
     sections: [
