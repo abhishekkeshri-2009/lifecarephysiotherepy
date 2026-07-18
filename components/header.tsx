@@ -11,7 +11,6 @@ const navItems = [
   ["/", "Home"],
   ["/about/", "About"],
   ["/services/", "Services"],
-  ["/conditions/", "Conditions"],
   ["/home-visit-process/", "Home Visit Process"],
   ["/blog/", "Blog"],
   ["/faq/", "FAQ"],
